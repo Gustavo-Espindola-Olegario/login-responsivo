@@ -1,3 +1,63 @@
 @charset "UTF-8";
 
 /* Outros media queries*/
+
+/* Typical Device Breakpoints
+---------------------------------
+Telefones Pequenos/Médios: de 320px até 539px
+Telefone Grandes/Phablets:: De 540px até 767px;
+Tablet: De 768px até 1023px;
+PCs (Laptops e Desktops): De 1024px até 1440px;
+TV e Monitores Maiores (Ultra-wide / Grandes Telas): Acima de 1440px.
+*/
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    main {
+        display: flex;
+        width: 500px;
+    }   
+    #login {
+        display: flex;
+        width: 500px;
+        height: 450px;
+    }   
+    #imagem {
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+        width: 40vw;
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+    main {
+        display: flex;
+        width: 950px;
+    }   
+    #login {
+        display: flex;
+        width: 950px;
+        height: 500px;
+    }   
+    #imagem {
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+        width: 50vw;
+    }
+}
+
+@media screen and (min-width:1441px) {
+    main {
+        display: flex;
+        width: 1200px;
+    }   
+    #login {
+        display: flex;
+        width: 1200px;
+        height: 500px;
+    }   
+    #imagem {
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+        width: 600px;
+    }
+}
