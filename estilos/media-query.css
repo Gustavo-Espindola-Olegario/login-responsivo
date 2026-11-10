@@ -19,13 +19,17 @@ TV e Monitores Maiores (Ultra-wide / Grandes Telas): Acima de 1440px.
     #login {
         display: flex;
         width: 500px;
-        height: 450px;
+        height: 340px;
     }   
     #imagem {
         height: 100%;
         border-radius: 20px 0px 0px 20px;
         width: 40vw;
     }
+    p {
+        font-size: 1.2em;
+        padding: 10px;
+    }   
 }
 
 @media screen and (min-width:1024px) and (max-width: 1440px) {
@@ -36,13 +40,20 @@ TV e Monitores Maiores (Ultra-wide / Grandes Telas): Acima de 1440px.
     #login {
         display: flex;
         width: 950px;
-        height: 500px;
+        height: 330px;
     }   
     #imagem {
         height: 100%;
         border-radius: 20px 0px 0px 20px;
         width: 50vw;
     }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        padding: 10px;
+    }   
 }
 
 @media screen and (min-width:1441px) {
@@ -51,13 +62,27 @@ TV e Monitores Maiores (Ultra-wide / Grandes Telas): Acima de 1440px.
         width: 1200px;
     }   
     #login {
-        display: flex;
+        display: block;
         width: 1200px;
-        height: 500px;
+        height: 330px;
+        transition: width 0s, height 0s; 
+        transition-timing-function: ease;
     }   
     #imagem {
+        float: right;
         height: 100%;
-        border-radius: 20px 0px 0px 20px;
+        border-radius: 0px 20px 20px 0px;
         width: 600px;
     }
+    #login-form {        
+        float: left;
+        width: 50%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.2em;
+        padding: 10px;
+    }  
 }

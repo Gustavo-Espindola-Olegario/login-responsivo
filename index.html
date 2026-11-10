@@ -16,14 +16,21 @@
             <div id="login-form">
                 <h1>Login</h1>
                 <p>Seja Bem-Vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
-                <form action="login.php" method="post">
-                    <label for="idnome"><span class="material-symbols-outlined">person</span></label>
-                    <input type="text" id="idnome" placeholder="Seu nome">
-                    <br>
-                    <label for="idsenha"><span class="material-symbols-outlined">key</span></label>
-                    <input type="password" id="idsenha" placeholder="Sua senha">
-                    <input type="text" id="identrar" placeholder="Entrar">
-                    <input type="email" id="idesqueci" placeholder="Esqueci a senha">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="nome" id="idnome" placeholder="Seu nome" autocomplete="email" required maxlength="50">
+                        <label for="idnome">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="idsenha" placeholder="Sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
+                        <label for="idsenha">Senha</label>
+                    </div>
+                    <input type="submit" id="identrar" placeholder="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha <span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
