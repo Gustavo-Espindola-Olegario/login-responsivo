@@ -13,12 +13,13 @@ body {
     background-image: linear-gradient(to top, rgb(60, 0, 60), rgb(172, 0, 172));
     height: 100vh;
     width: 100vw;
+    overflow-y: hidden;
 }
 
 main {
     display: flex;
     height: 100vh;
-    width: 260px;
+    width: 290px;
     align-items: center;
     margin: 0px auto;
 }
@@ -27,7 +28,7 @@ main {
     background-color: whitesmoke;
     border-radius: 20px;
     box-shadow:  0px 0px 10px  rgba(0, 0, 0, 0.500);
-    width: 260px;  /* Largura inicial explícita */
+    width: 290px;  /* Largura inicial explícita */
     height: 470px; /* Altura inicial explícita */
     transition: width 1s, height 0.3s; 
     transition-timing-function: ease;
